@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vivian.usandosqlite.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/codigo"
+        android:textSize="@dimen/fab_margin"/>
+
+    <EditText
+        android:id="@+id/et_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_disciplina"
+        android:textSize="@dimen/fab_margin"/>
+
+    <EditText
+        android:id="@+id/et_nome_disciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nota"
+        android:textSize="@dimen/fab_margin"/>
+
+    <EditText
+        android:id="@+id/et_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bt_incluir"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/incluir"
+            android:onClick="btIncluirOnClick"/>
+
+        <Button
+            android:id="@+id/bt_alterar"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/alterar"
+            android:onClick="btAlterarOnClick"/>
+
+        <Button
+            android:id="@+id/bt_excluir"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/exlcluir"
+            android:onClick="btExcluirOnClick"/>
+
+        <Button
+            android:id="@+id/bt_pesquisar"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/pesquisar"
+            android:onClick="btPesquisarOnClick"/>
+
+        <Button
+            android:id="@+id/bt_listar"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/listar"
+            android:onClick="btListarOnClick"/>
+    </LinearLayout>
+
+</LinearLayout>
